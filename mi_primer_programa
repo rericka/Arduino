@@ -1,0 +1,17 @@
+
+int led = 13;
+void setup()
+{ //aqui se definen las caracteristicas del dispositivo
+  //si es para meter o sacar datos(si es entrada o salida)
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT);//que el pi 13 sea de tipo salida
+}
+//enciende intermitente por segundo
+void loop()
+{
+  digitalWrite(led,HIGH);enciende
+  delay(1000);pausa un seg
+  digitalWrite(led,LOW);apaga
+  delay(1000);
+}
+//las funciones van debajo del programa principal es decir del loop anterior
